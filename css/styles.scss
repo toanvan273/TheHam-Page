@@ -1,0 +1,79 @@
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+// ======= Biến Color ===== 
+$green-slide: #18cfab;
+$white: #fff;
+$text-color: #b8b8b8;
+
+// ========== ===== 
+
+
+// ======= CSS main page ===== 
+// header{
+//     background: #44433e;
+//     height: 100px;
+// }
+// #navigation{
+//     background: #44433e4f;
+// }
+.head{
+    background: #44433e4f;
+    .navbar-brand{
+        padding: 10px 15px;
+        .icon{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 35px;
+            background: $green-slide;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            span{
+                color: $white;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+        .name{
+            display: inline-block;
+            h3{
+                color:  $white;
+                font-size: 18px;
+                font-weight: 600;
+                span{
+                    color: $green-slide;
+                }
+            }
+        }
+    }
+    #AllMenu{
+        li a{
+            color: $text-color;
+        }
+        .nav-link{
+            border-bottom: 2px solid transparent;
+            transition: all 500ms;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            padding-right: 0;
+            padding-left: 0;
+            &:hover{
+                text-decoration: none;
+                color: $green-slide;
+                border-bottom: 2px solid $green-slide;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .head{
+        #AllMenu{
+            .navbar-nav{
+                background: #834c9e80;
+                border-radius: 5px;
+            }
+        }
+    }
+}
