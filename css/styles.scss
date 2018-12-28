@@ -1,22 +1,28 @@
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-}
+// h1,h3,h4,h5,h6{
+//     margin: 0;
+// }
 // ======= Biến Color ===== 
 $green-slide: #18cfab;
 $white: #fff;
 $text-color: #b8b8b8;
+$mix-black: #1c2a33;
 
 // ========== ===== 
 
+@media (max-width: 991px){
+    .head{
+        #AllMenu{
+            .navbar-nav{
+                background: #834c9e80;
+                border-radius: 5px;
+            }
 
+          
+        }
+    }
+}
 // ======= CSS main page ===== 
-// header{
-//     background: #44433e;
-//     height: 100px;
-// }
-// #navigation{
-//     background: #44433e4f;
-// }
+
 .head{
     background: #44433e4f;
     .navbar-brand{
@@ -48,7 +54,7 @@ $text-color: #b8b8b8;
         }
     }
     #AllMenu{
-        li a{
+        i,li a{
             color: $text-color;
         }
         .nav-link{
@@ -64,16 +70,149 @@ $text-color: #b8b8b8;
                 border-bottom: 2px solid $green-slide;
             }
         }
+        .form-inline{
+            .form-control, .btn{
+                background: transparent;
+            }
+            .form-control{
+                &::placeholder{
+                    color: $text-color;
+                }
+                
+            }
+       } 
     }
 }
-
-@media (max-width: 991px){
-    .head{
-        #AllMenu{
-            .navbar-nav{
-                background: #834c9e80;
-                border-radius: 5px;
+.mybtn{
+    display: inline-block;
+    width: 160px;
+    height: 65px;
+    padding-top: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border-top: 5px solid #fff;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.slide{
+    #banner{
+        .carousel-inner{
+            .carousel-caption{
+                @media (min-width: 920px){
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    bottom: unset;
+                    padding: 0;
+                }
+                
+                .content{
+                    span{
+                        color: $green-slide;
+                    }
+                    p{
+                        color: $text-color;
+                    }
+                }
+                .buy{
+                    .explo{
+                        background: #18cfab;
+                        
+                    }
+                    .purch{
+                        background: #00cbf6;
+                    }
+                }
             }
+           
         }
     }
 }
+
+.wrapper{
+    .banner{
+        .hicon{
+            height: 300px;
+            display: inline-block;
+            float: left;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .icon01{
+            background: $mix-black;
+            color: $green-slide;
+            border-top: 5px solid $green-slide;
+        }
+        i{    font-size: 70px;}
+        h3{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .icon02{
+            background: $green-slide;
+            color: $white;
+            border-top: 5px solid #fff;
+        }
+    }
+    #skills{
+        padding: 90px 0;
+        p{color: $text-color;}
+        h5:hover{color: $green-slide;}
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .item{
+            display: inline-block;
+            float: left;
+            margin-bottom: 40px;
+        }
+        .block{
+            color: $green-slide;
+            padding-right: 20px;
+            font-family: FontAwesome;
+            font-size: 30px;
+        }
+        .block01 h5::before{
+            content: "\f06c";
+            @extend .block;
+        }
+        .block02 h5::before{
+            content: "\f24a";
+            @extend .block;
+        }
+        .block03 h5::before{
+            content:"\f002";
+            @extend .block;
+        }
+        .block04 h5::before{
+            content:"\f011";
+            @extend .block;
+        }
+        .block05 h5::before{
+            content:"\f013";
+            @extend .block;
+        }
+        .block06 h5::before{
+            content:"\f017";
+            @extend .block;
+        }
+        .block07 h5::before{
+            content:"\f01c";
+            @extend .block;
+        }
+        .block08 h5::before{
+            content:"\f16b";
+            @extend .block;
+        }
+        .block09 h5::before{
+            content:"\f02d";
+            @extend .block;
+        }
+
+       
+    }
+}
+

@@ -1,5 +1,7 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+@media (max-width: 991px) {
+  .head #AllMenu .navbar-nav {
+    background: #834c9e80;
+    border-radius: 5px; } }
 
 .head {
   background: #44433e4f; }
@@ -26,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 600; }
         .head .navbar-brand .name h3 span {
           color: #18cfab; }
-  .head #AllMenu li a {
+  .head #AllMenu i, .head #AllMenu li a {
     color: #b8b8b8; }
   .head #AllMenu .nav-link {
     border-bottom: 2px solid transparent;
@@ -41,8 +43,109 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       color: #18cfab;
       border-bottom: 2px solid #18cfab; }
+  .head #AllMenu .form-inline .form-control, .head #AllMenu .form-inline .btn {
+    background: transparent; }
+  .head #AllMenu .form-inline .form-control::-webkit-input-placeholder {
+    color: #b8b8b8; }
+  .head #AllMenu .form-inline .form-control:-ms-input-placeholder {
+    color: #b8b8b8; }
+  .head #AllMenu .form-inline .form-control::-ms-input-placeholder {
+    color: #b8b8b8; }
+  .head #AllMenu .form-inline .form-control::placeholder {
+    color: #b8b8b8; }
 
-@media (max-width: 991px) {
-  .head #AllMenu .navbar-nav {
-    background: #834c9e80;
-    border-radius: 5px; } }
+.mybtn {
+  display: inline-block;
+  width: 160px;
+  height: 65px;
+  padding-top: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border-top: 5px solid #fff; }
+
+a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+@media (min-width: 920px) {
+  .slide #banner .carousel-inner .carousel-caption {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom: unset;
+    padding: 0; } }
+
+.slide #banner .carousel-inner .carousel-caption .content span {
+  color: #18cfab; }
+
+.slide #banner .carousel-inner .carousel-caption .content p {
+  color: #b8b8b8; }
+
+.slide #banner .carousel-inner .carousel-caption .buy .explo {
+  background: #18cfab; }
+
+.slide #banner .carousel-inner .carousel-caption .buy .purch {
+  background: #00cbf6; }
+
+.wrapper .banner .hicon {
+  height: 300px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding-top: 100px; }
+
+.wrapper .banner .icon01 {
+  background: #1c2a33;
+  color: #18cfab;
+  border-top: 5px solid #18cfab; }
+
+.wrapper .banner i {
+  font-size: 70px; }
+
+.wrapper .banner h3 {
+  font-size: 20px;
+  margin-top: 10px; }
+
+.wrapper .banner .icon02 {
+  background: #18cfab;
+  color: #fff;
+  border-top: 5px solid #fff; }
+
+.wrapper #skills {
+  padding: 90px 0; }
+  .wrapper #skills p {
+    color: #b8b8b8; }
+  .wrapper #skills h5:hover {
+    color: #18cfab; }
+  .wrapper #skills .title {
+    text-align: center;
+    margin-bottom: 50px; }
+  .wrapper #skills .item {
+    display: inline-block;
+    float: left;
+    margin-bottom: 40px; }
+  .wrapper #skills .block, .wrapper #skills .block01 h5::before, .wrapper #skills .block02 h5::before, .wrapper #skills .block03 h5::before, .wrapper #skills .block04 h5::before, .wrapper #skills .block05 h5::before, .wrapper #skills .block06 h5::before, .wrapper #skills .block07 h5::before, .wrapper #skills .block08 h5::before, .wrapper #skills .block09 h5::before {
+    color: #18cfab;
+    padding-right: 20px;
+    font-family: FontAwesome;
+    font-size: 30px; }
+  .wrapper #skills .block01 h5::before {
+    content: "\f06c"; }
+  .wrapper #skills .block02 h5::before {
+    content: "\f24a"; }
+  .wrapper #skills .block03 h5::before {
+    content: "\f002"; }
+  .wrapper #skills .block04 h5::before {
+    content: "\f011"; }
+  .wrapper #skills .block05 h5::before {
+    content: "\f013"; }
+  .wrapper #skills .block06 h5::before {
+    content: "\f017"; }
+  .wrapper #skills .block07 h5::before {
+    content: "\f01c"; }
+  .wrapper #skills .block08 h5::before {
+    content: "\f16b"; }
+  .wrapper #skills .block09 h5::before {
+    content: "\f02d"; }
