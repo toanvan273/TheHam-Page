@@ -4,7 +4,7 @@
     border-radius: 5px; } }
 
 .head {
-  background: #44433e4f; }
+  background: #3b773bd9; }
   .head .navbar-brand {
     padding: 10px 15px; }
     .head .navbar-brand .icon {
@@ -89,12 +89,19 @@ a:hover {
 .slide #banner .carousel-inner .carousel-caption .buy .purch {
   background: #00cbf6; }
 
+.block, .wrapper #skills .block01 h5::before, .wrapper #skills .block02 h5::before, .wrapper #skills .block03 h5::before, .wrapper #skills .block04 h5::before, .wrapper #skills .block05 h5::before, .wrapper #skills .block06 h5::before, .wrapper #skills .block07 h5::before, .wrapper #skills .block08 h5::before, .wrapper #skills .block09 h5::before {
+  display: inline-block;
+  float: left; }
+
 .wrapper .banner .hicon {
   height: 300px;
   display: inline-block;
   float: left;
   text-align: center;
   padding-top: 100px; }
+  .wrapper .banner .hicon:hover {
+    -webkit-box-shadow: 0px 5px 15px white;
+    box-shadow: 0px 5px 15px white; }
 
 .wrapper .banner .icon01 {
   background: #1c2a33;
@@ -113,15 +120,16 @@ a:hover {
   color: #fff;
   border-top: 5px solid #fff; }
 
+.wrapper .title {
+  text-align: center;
+  margin-bottom: 30px; }
+
 .wrapper #skills {
   padding: 90px 0; }
   .wrapper #skills p {
     color: #b8b8b8; }
   .wrapper #skills h5:hover {
     color: #18cfab; }
-  .wrapper #skills .title {
-    text-align: center;
-    margin-bottom: 50px; }
   .wrapper #skills .item {
     display: inline-block;
     float: left;
@@ -130,7 +138,7 @@ a:hover {
     color: #18cfab;
     padding-right: 20px;
     font-family: FontAwesome;
-    font-size: 30px; }
+    font-size: 25px; }
   .wrapper #skills .block01 h5::before {
     content: "\f06c"; }
   .wrapper #skills .block02 h5::before {
@@ -149,3 +157,109 @@ a:hover {
     content: "\f16b"; }
   .wrapper #skills .block09 h5::before {
     content: "\f02d"; }
+
+.about {
+  background: url(../img/bg02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.88;
+  height: 600px;
+  padding: 40px 0; }
+  .about .controls .control {
+    position: relative;
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: #444;
+    cursor: pointer;
+    font-size: 10px;
+    color: white;
+    -webkit-transition: background 150ms;
+    -o-transition: background 150ms;
+    transition: background 150ms; }
+  .about .contain {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.1px;
+    /* 1 Columns */
+    /* 2 Columns */
+    /* 3 Columns */ }
+    .about .contain .green {
+      color: #91e6c7;
+      display: none; }
+    .about .contain .blue {
+      color: #5ecdde;
+      display: none; }
+    .about .contain .pink {
+      color: #d595aa; }
+    .about .contain .mix {
+      background: #e92b2b;
+      border-top: .5rem solid currentColor;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      position: relative; }
+    .about .contain .mix, .about .contain .gap {
+      display: inline-block;
+      vertical-align: top; }
+    .about .contain .mix, .about .contain .gap {
+      width: calc(100%/1 - (((1 - 1) * 1rem) / 1)); }
+
+.about .main .title {
+  color: #fff; }
+
+.about .main .menu-about {
+  overflow: hidden; }
+  .about .main .menu-about ul {
+    margin: 0;
+    padding: 0; }
+
+.about .main .nav-item {
+  display: inline-block;
+  float: left;
+  margin: 10px; }
+  .about .main .nav-item a {
+    border-top: 2px solid transparent;
+    color: #fff;
+    font-weight: 600; }
+    .about .main .nav-item a:hover {
+      color: #18cfab;
+      border-top: 2px solid #18cfab; }
+
+.about .main .content-about {
+  position: relative; }
+  .about .main .content-about .our {
+    height: 350px;
+    width: 100%;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    padding-top: 30px; }
+  .about .main .content-about .skills {
+    background: transparent; }
+    .about .main .content-about .skills .codeconSkillbar {
+      width: 100%;
+      height: 30px;
+      position: relative;
+      background: rgba(17, 17, 17, 0.3);
+      margin: 10px auto; }
+    .about .main .content-about .skills #codeconHTML {
+      width: 100%;
+      -webkit-animation: Animate-HTML 14s;
+      animation: Animate-HTML 14s;
+      height: 30px;
+      position: absolute;
+      background-color: #ea8564; }
+  .about .main .content-about .biography {
+    background: transparent;
+    color: #fff; }
+  .about .main .content-about .history {
+    background: transparent;
+    color: #fff; }
+    .about .main .content-about .history .left, .about .main .content-about .history .right {
+      padding: 0; }
+      .about .main .content-about .history .left p::before, .about .main .content-about .history .right p::before {
+        font-family: FontAwesome;
+        content: "\f058";
+        color: #18cfab;
+        margin-right: 5px; }
