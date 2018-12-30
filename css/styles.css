@@ -243,19 +243,120 @@ a:hover {
       position: relative;
       background: rgba(17, 17, 17, 0.3);
       margin: 10px auto; }
+    .about .main .content-about .skills .radiour, .about .main .content-about .skills #codeconHTML, .about .main .content-about .skills #codeconCSS, .about .main .content-about .skills #codeconjQuery, .about .main .content-about .skills #codeconJS, .about .main .content-about .skills #codeconXML {
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      height: 30px;
+      position: absolute; }
     .about .main .content-about .skills #codeconHTML {
       width: 100%;
       -webkit-animation: Animate-HTML 14s;
       animation: Animate-HTML 14s;
-      height: 30px;
-      position: absolute;
-      background-color: #ea8564; }
+      background-color: #9c5da5; }
+
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+
+@keyframes Animate-HTML {
+  from {
+    width: 10px; }
+  to {
+    width: 100%; } }
+    .about .main .content-about .skills .codeconSkillArea {
+      z-index: 1;
+      float: left;
+      margin-top: 3px;
+      margin-left: 10px;
+      color: #fff;
+      font-size: 16px; }
+    .about .main .content-about .skills .PercentText {
+      margin-top: 2px;
+      float: right;
+      color: #fff;
+      z-index: 3;
+      position: relative;
+      padding-right: 5px;
+      font-size: 16px; }
+    .about .main .content-about .skills #codeconCSS {
+      -webkit-animation: Animate-CSS 5s;
+      animation: Animate-CSS 5s;
+      width: 70%;
+      background-color: #11b0de; }
+
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+
+@keyframes Animate-CSS {
+  from {
+    width: 10px; }
+  to {
+    width: 70%; } }
+    .about .main .content-about .skills #codeconjQuery {
+      -webkit-animation: Animate-jQuery 5s;
+      animation: Animate-jQuery 5s;
+      width: 40%;
+      background-color: #d67f7f; }
+
+@-webkit-keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+
+@keyframes Animate-jQuery {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+    .about .main .content-about .skills #codeconJS {
+      -webkit-animation: Animate-JS 5s;
+      animation: Animate-JS 5s;
+      width: 65%;
+      background-color: #20bc9d; }
+
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+
+@keyframes Animate-JS {
+  from {
+    width: 10px; }
+  to {
+    width: 65%; } }
+    .about .main .content-about .skills #codeconXML {
+      -webkit-animation: Animate-XML 5s;
+      animation: Animate-XML 5s;
+      width: 40%;
+      background-color: #bb8a36; }
+
+@-webkit-keyframes Animate-XML {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
+
+@keyframes Animate-XML {
+  from {
+    width: 10px; }
+  to {
+    width: 40%; } }
   .about .main .content-about .biography {
     background: transparent;
     color: #fff; }
   .about .main .content-about .history {
     background: transparent;
     color: #fff; }
+    @media (max-width: 768px) {
+      .about .main .content-about .history p {
+        margin-bottom: 10px; } }
     .about .main .content-about .history .left, .about .main .content-about .history .right {
       padding: 0; }
       .about .main .content-about .history .left p::before, .about .main .content-about .history .right p::before {

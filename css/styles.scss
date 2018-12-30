@@ -360,12 +360,93 @@ a:hover{
                     background: rgba(17, 17, 17, .3);
                     margin: 10px auto;
                 }
+                .radiour{
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                    height: 30px;
+                    position: absolute;
+                }
                 #codeconHTML {
                     width: 100%;
                     animation: Animate-HTML 14s;
-                    height: 30px;
-                    position: absolute;
-                    background-color: #ea8564;
+                    background-color: #9c5da5;
+                   @extend .radiour;
+                }
+                @keyframes Animate-HTML {
+                    from {
+                    width: 10px;
+                }
+                to {
+                    width: 100%}
+                }
+                .codeconSkillArea {
+                    z-index: 1;
+                    float: left;
+                    margin-top: 3px;
+                    margin-left: 10px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+                .PercentText {
+                    margin-top: 2px;
+                    float: right;
+                    color: #fff;
+                    z-index: 3;
+                    position: relative;
+                    padding-right: 5px;
+                    font-size: 16px;
+                }
+                #codeconCSS {
+                    animation: Animate-CSS 5s;
+                    width: 70%;
+                    background-color: #11b0de;
+                    @extend .radiour;
+                }
+                @keyframes Animate-CSS {
+                    from {
+                    width: 10px;
+                }
+                to {
+                    width: 70%}
+                }
+                #codeconjQuery{
+                    animation: Animate-jQuery 5s;
+                    width: 40%;
+                    @extend .radiour;
+                    background-color: #d67f7f;
+                }
+                @keyframes Animate-jQuery {
+                    from {
+                    width: 10px;
+                }
+                to {
+                    width: 40%}
+                }
+                #codeconJS{
+                    animation: Animate-JS 5s;
+                    width: 65%;
+                    @extend .radiour;
+                    background-color: #20bc9d;
+                }
+                @keyframes Animate-JS {
+                    from {
+                    width: 10px;
+                }
+                to {
+                    width: 65%}
+                }
+                #codeconXML{
+                    animation: Animate-XML 5s;
+                    width: 40%;
+                    @extend .radiour;
+                    background-color: #bb8a36;
+                }
+                @keyframes Animate-XML {
+                    from {
+                    width: 10px;
+                }
+                to {
+                    width: 40%}
                 }
             }
             .biography{
@@ -375,6 +456,11 @@ a:hover{
             .history{
                 background: transparent;
                 color: $white;
+                @media (max-width: 768px){
+                   p{
+                    margin-bottom: 10px;
+                   } 
+                }
                 .left, .right{
                     padding: 0;
                     
