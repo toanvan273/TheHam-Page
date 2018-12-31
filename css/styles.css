@@ -181,10 +181,7 @@ a:hover {
   .about .contain {
     padding: 1rem;
     text-align: justify;
-    font-size: 0.1px;
-    /* 1 Columns */
-    /* 2 Columns */
-    /* 3 Columns */ }
+    font-size: 0.1px; }
     .about .contain .green {
       color: #91e6c7;
       display: none; }
@@ -193,17 +190,6 @@ a:hover {
       display: none; }
     .about .contain .pink {
       color: #d595aa; }
-    .about .contain .mix {
-      background: #e92b2b;
-      border-top: .5rem solid currentColor;
-      border-radius: 2px;
-      margin-bottom: 1rem;
-      position: relative; }
-    .about .contain .mix, .about .contain .gap {
-      display: inline-block;
-      vertical-align: top; }
-    .about .contain .mix, .about .contain .gap {
-      width: calc(100%/1 - (((1 - 1) * 1rem) / 1)); }
 
 .about .main .title {
   color: #fff; }
@@ -364,3 +350,64 @@ a:hover {
         content: "\f058";
         color: #18cfab;
         margin-right: 5px; }
+
+.work .menu-work {
+  text-align: center; }
+  .work .menu-work ul {
+    display: inline-block; }
+  .work .menu-work .control {
+    border: 1px solid #f1f1f1;
+    padding: 10px 15px;
+    color: #b8b8b8;
+    font-weight: 500; }
+    .work .menu-work .control:hover {
+      border-top: 2px solid #18cfab;
+      color: #18cfab; }
+
+.work .contain img {
+  width: 100%;
+  height: 206px; }
+
+.work .contain .mix {
+  background: #e92b2b;
+  padding-left: 0;
+  padding-right: 0; }
+  .work .contain .mix:hover .wap {
+    -webkit-transform: rotateY(0deg) scale(1, 1);
+    transform: rotateY(0deg) scale(1, 1);
+    opacity: 1; }
+  .work .contain .mix:hover .step:hover {
+    background: #fff;
+    color: #18cfab; }
+
+.work .contain .wap {
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  -webkit-transition: all 450ms ease-out 0s;
+  -o-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
+  opacity: 0;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-top: 2px solid #18cfab;
+  padding-top: 45px; }
+  .work .contain .wap .step {
+    color: #fff;
+    background: #18cfab;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #18cfab;
+    display: inline-block;
+    line-height: 37px; }
+  .work .contain .wap h5 {
+    font-weight: 700;
+    margin-top: 40px;
+    color: #18cfab; }
+  .work .contain .wap p {
+    color: #b8b8b8; }
