@@ -439,34 +439,46 @@ a:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .service .active-service, .service .nav-item:hover {
+    background: #18cfab; }
+    .service .active-service::before, .service .nav-item:hover::before {
+      border-top: 0px solid transparent;
+      border-right: 10px solid #18cfab;
+      border-bottom: 5px solid transparent;
+      content: "";
+      height: 0;
+      right: 50%;
+      position: absolute;
+      bottom: -5px;
+      width: 0; }
+    .service .active-service::after, .service .nav-item:hover::after {
+      border-top: 0px solid transparent;
+      border-left: 10px solid #18cfab;
+      border-bottom: 5px solid transparent;
+      content: "";
+      height: 0;
+      left: 50%;
+      position: absolute;
+      bottom: -5px;
+      width: 0; }
+    .service .active-service .nav-link, .service .nav-item:hover .nav-link {
+      color: #fff !important; }
   .service .nav-item {
     border: 1px solid #f1f1f1;
     width: 16.666667%;
     text-align: center;
     padding: 8px 0px;
     font-weight: 600;
-    position: relative; }
-    .service .nav-item:hover {
-      background: #18cfab; }
-      .service .nav-item:hover::before {
-        border-top: 0px solid transparent;
-        border-right: 10px solid #18cfab;
-        border-bottom: 5px solid transparent;
-        content: "";
-        height: 0;
-        right: 50%;
-        position: absolute;
-        bottom: -5px;
-        width: 0; }
-      .service .nav-item:hover::after {
-        border-top: 0px solid transparent;
-        border-left: 10px solid #18cfab;
-        border-bottom: 5px solid transparent;
-        content: "";
-        height: 0;
-        left: 50%;
-        position: absolute;
-        bottom: -5px;
-        width: 0; }
-      .service .nav-item:hover .nav-link {
-        color: #fff !important; } }
+    position: relative; } }
+
+.service .content-service {
+  margin-top: 20px; }
+  .service .content-service img {
+    width: 100%;
+    height: auto; }
+  .service .content-service .image {
+    padding: 0; }
+  .service .content-service .block, .service .content-service .wrapper #skills .block01 h5::before, .wrapper #skills .block01 .service .content-service h5::before, .service .content-service .wrapper #skills .block02 h5::before, .wrapper #skills .block02 .service .content-service h5::before, .service .content-service .wrapper #skills .block03 h5::before, .wrapper #skills .block03 .service .content-service h5::before, .service .content-service .wrapper #skills .block04 h5::before, .wrapper #skills .block04 .service .content-service h5::before, .service .content-service .wrapper #skills .block05 h5::before, .wrapper #skills .block05 .service .content-service h5::before, .service .content-service .wrapper #skills .block06 h5::before, .wrapper #skills .block06 .service .content-service h5::before, .service .content-service .wrapper #skills .block07 h5::before, .wrapper #skills .block07 .service .content-service h5::before, .service .content-service .wrapper #skills .block08 h5::before, .wrapper #skills .block08 .service .content-service h5::before, .service .content-service .wrapper #skills .block09 h5::before, .wrapper #skills .block09 .service .content-service h5::before, .service .content-service .work .containx .itemx, .work .containx .service .content-service .itemx {
+    padding-right: 0; }
+  .service .content-service p {
+    color: #b8b8b8; }

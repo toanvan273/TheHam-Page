@@ -552,6 +552,34 @@ a:hover{
             width: 100%;
             justify-content: space-between;
         }
+        .active-service{
+            background: $green-slide;
+            &::before{
+                border-top: 0px solid transparent;
+                border-right: 10px solid $green-slide;
+                border-bottom: 5px solid transparent;
+                content: "";
+                height: 0;
+                right: 50%;
+                position: absolute;
+                bottom: -5px;
+                width: 0;
+            }
+            &::after{
+                border-top: 0px solid transparent;
+                border-left: 10px solid $green-slide;
+                border-bottom: 5px solid transparent;
+                content: "";
+                height: 0;
+                left: 50%;
+                position: absolute;
+                bottom: -5px;
+                width: 0;
+            }
+            .nav-link{
+                color: $white !important;
+            }
+        }
         .nav-item{
             border: 1px solid #f1f1f1;
             width: 16.666667%;
@@ -560,34 +588,24 @@ a:hover{
             font-weight: 600;
             position: relative;
             &:hover{
-                background: $green-slide;
-                
-                &::before{
-                    border-top: 0px solid transparent;
-                    border-right: 10px solid $green-slide;
-                    border-bottom: 5px solid transparent;
-                    content: "";
-                    height: 0;
-                    right: 50%;
-                    position: absolute;
-                    bottom: -5px;
-                    width: 0;
-                }
-                &::after{
-                    border-top: 0px solid transparent;
-                    border-left: 10px solid $green-slide;
-                    border-bottom: 5px solid transparent;
-                    content: "";
-                    height: 0;
-                    left: 50%;
-                    position: absolute;
-                    bottom: -5px;
-                    width: 0;
-                }
-                .nav-link{
-                    color: $white !important;
-                }
+                @extend .active-service;
             }
+        }
+    }
+    .content-service{
+        margin-top: 20px;
+        img{
+            width: 100%;
+            height: auto;
+            }
+        .image{
+            padding: 0;
+        }
+        .block{
+            padding-right: 0;
+        }
+        p{
+            color: $text-color;
         }
     }
     
