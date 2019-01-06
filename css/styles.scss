@@ -91,6 +91,13 @@ $mix-black: #1c2a33;
     margin: 5px;
     border-radius: 5px;
     border-top: 5px solid #fff;
+    @media (max-width:992px){
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        padding-top: 7px;
+        font-weight: 500;
+    }
 }
 a:hover{
     text-decoration: none;
@@ -544,7 +551,9 @@ a:hover{
     }
 }
 .service{
+    // margin-bottom: 20px;
     @media (min-width:992px){
+       height: 400px;
         .navbar{
             padding: 0;
         }
@@ -606,6 +615,82 @@ a:hover{
         }
         p{
             color: $text-color;
+        }
+    }
+    
+}
+.ready{
+    background-image: url(../img/bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    color: $text-color;
+    text-align: center;
+    padding-top: 20px;
+    @media (min-width: 992px){
+        padding-top: 100px;
+    }
+    
+    h1{
+        color: $green-slide;
+    }
+    .style{
+        background: $green-slide;
+        text-align: center;
+    }
+}
+.news{
+    .content-news{
+        position: relative;
+        color: $text-color;
+        .item{
+            padding-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                h5{
+                    color: $green-slide;
+                }
+                .time{
+                    background: $green-slide;
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .time{
+            transition: all 500ms;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            color: $white;
+            text-align: center;
+            line-height: 17px;
+            background: #092923;
+            position: absolute;
+            top: 0;
+            right: 15px;
+            p{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .info{
+            padding-left: 15px;
+            overflow: hidden;
+            border: 1px solid #dedede;
+            background: #f0fffc;
+            h5{
+                color: #444;
+                transition: all 500ms;
+            }
+            .admin{
+                border-right: 1px solid;
+                padding-right: 10px;
+                margin-right: 10px;
+            }
         }
     }
     

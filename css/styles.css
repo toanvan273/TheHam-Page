@@ -62,6 +62,13 @@
   margin: 5px;
   border-radius: 5px;
   border-top: 5px solid #fff; }
+  @media (max-width: 992px) {
+    .mybtn {
+      width: 100px;
+      height: 40px;
+      font-size: 12px;
+      padding-top: 7px;
+      font-weight: 500; } }
 
 a:hover {
   text-decoration: none;
@@ -432,44 +439,46 @@ a:hover {
       width: calc(100%/4 - (((4 - 1) * 0rem) / 4)); } }
 
 @media (min-width: 992px) {
-  .service .navbar {
-    padding: 0; }
-  .service .navbar-nav {
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .service .active-service, .service .nav-item:hover {
-    background: #18cfab; }
-    .service .active-service::before, .service .nav-item:hover::before {
-      border-top: 0px solid transparent;
-      border-right: 10px solid #18cfab;
-      border-bottom: 5px solid transparent;
-      content: "";
-      height: 0;
-      right: 50%;
-      position: absolute;
-      bottom: -5px;
-      width: 0; }
-    .service .active-service::after, .service .nav-item:hover::after {
-      border-top: 0px solid transparent;
-      border-left: 10px solid #18cfab;
-      border-bottom: 5px solid transparent;
-      content: "";
-      height: 0;
-      left: 50%;
-      position: absolute;
-      bottom: -5px;
-      width: 0; }
-    .service .active-service .nav-link, .service .nav-item:hover .nav-link {
-      color: #fff !important; }
-  .service .nav-item {
-    border: 1px solid #f1f1f1;
-    width: 16.666667%;
-    text-align: center;
-    padding: 8px 0px;
-    font-weight: 600;
-    position: relative; } }
+  .service {
+    height: 400px; }
+    .service .navbar {
+      padding: 0; }
+    .service .navbar-nav {
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .service .active-service, .service .nav-item:hover {
+      background: #18cfab; }
+      .service .active-service::before, .service .nav-item:hover::before {
+        border-top: 0px solid transparent;
+        border-right: 10px solid #18cfab;
+        border-bottom: 5px solid transparent;
+        content: "";
+        height: 0;
+        right: 50%;
+        position: absolute;
+        bottom: -5px;
+        width: 0; }
+      .service .active-service::after, .service .nav-item:hover::after {
+        border-top: 0px solid transparent;
+        border-left: 10px solid #18cfab;
+        border-bottom: 5px solid transparent;
+        content: "";
+        height: 0;
+        left: 50%;
+        position: absolute;
+        bottom: -5px;
+        width: 0; }
+      .service .active-service .nav-link, .service .nav-item:hover .nav-link {
+        color: #fff !important; }
+    .service .nav-item {
+      border: 1px solid #f1f1f1;
+      width: 16.666667%;
+      text-align: center;
+      padding: 8px 0px;
+      font-weight: 600;
+      position: relative; } }
 
 .service .content-service {
   margin-top: 20px; }
@@ -482,3 +491,67 @@ a:hover {
     padding-right: 0; }
   .service .content-service p {
     color: #b8b8b8; }
+
+.ready {
+  background-image: url(../img/bg.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  color: #b8b8b8;
+  text-align: center;
+  padding-top: 20px; }
+  @media (min-width: 992px) {
+    .ready {
+      padding-top: 100px; } }
+  .ready h1 {
+    color: #18cfab; }
+  .ready .style {
+    background: #18cfab;
+    text-align: center; }
+
+.news .content-news {
+  position: relative;
+  color: #b8b8b8; }
+  .news .content-news .item {
+    padding-bottom: 15px; }
+    .news .content-news .item:hover {
+      cursor: pointer; }
+      .news .content-news .item:hover h5 {
+        color: #18cfab; }
+      .news .content-news .item:hover .time {
+        background: #18cfab; }
+  .news .content-news img {
+    width: 100%;
+    height: auto; }
+  .news .content-news .time {
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    background: #092923;
+    position: absolute;
+    top: 0;
+    right: 15px; }
+    .news .content-news .time p {
+      margin: 0;
+      padding: 0; }
+  .news .content-news .info {
+    padding-left: 15px;
+    overflow: hidden;
+    border: 1px solid #dedede;
+    background: #f0fffc; }
+    .news .content-news .info h5 {
+      color: #444;
+      -webkit-transition: all 500ms;
+      -o-transition: all 500ms;
+      transition: all 500ms; }
+    .news .content-news .info .admin {
+      border-right: 1px solid;
+      padding-right: 10px;
+      margin-right: 10px; }
